@@ -1,17 +1,18 @@
-import useFetch from './api/api';
+import useFetch from "./api/api";
 
 function App() {
-
   const { data } = useFetch();
 
   return (
     <div>
       <pre>
-        {data.map((item, key) => (
-          <div key={key}>
-            <h1>{item.name}</h1>
-          </div>
-        ))}
+        {data &&
+          data.map((item, key) => (
+            <div key={key}>
+              <h1>{item.name}</h1>
+            </div>
+          ))
+        }
       </pre>
     </div>
   );

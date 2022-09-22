@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 const client = axios.create({
-  baseURL: "https://api.coinstats.app/public/v1/coins?skip=0&limit=100¤cy=INR"
+  baseURL: "https://api.coinstats.app/public/v1/coins?skip=0&limit=100¤cy=INR",
 });
 
 const useFetch = () => {
@@ -14,6 +14,6 @@ const useFetch = () => {
     }
     getCrypto();
   }, []);
-  return {data}
-}
+  return { data };
+};
 export default useFetch;
