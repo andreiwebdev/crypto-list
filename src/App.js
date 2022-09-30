@@ -15,7 +15,7 @@ function App() {
         }
       </pre> */}
       {console.log(data)}
-      <div className="bg-[#f4f4f4] w-full sm:w-3/4 lg:w-2/4 h-full overflow-auto rounded-3xl pb-4 px-2">
+      <div className="bg-[#f4f4f4] w-full sm:w-3/4 lg:w-2/4 h-full overflow-auto rounded-3xl pb-4 px-2 md:px-4">
         <div className="flex items-center mb-5 pt-2">
           <div className='w-2/12'>Icon</div>
           <div className='w-4/12'>Name</div>
